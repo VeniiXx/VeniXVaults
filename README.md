@@ -1,6 +1,6 @@
 # VeniXVaults
 
-VeniXVaults is a modern personal vault plugin for Paper 1.21.x through 1.26.x servers. It is built from scratch for Turkish Minecraft communities that want a clean, branded, configurable storage system.
+VeniXVaults is a modern personal vault plugin for Paper 1.21.x through 26.x servers. It is built from scratch for Turkish Minecraft communities that want a clean, branded, configurable storage system.
 
 ## Features
 
@@ -19,7 +19,7 @@ VeniXVaults is a modern personal vault plugin for Paper 1.21.x through 1.26.x se
 
 ## Requirements
 
-- Paper 1.21.x - 1.26.x
+- Paper 1.21.x - 26.x
 - Java 21 or newer
 
 ## Commands
