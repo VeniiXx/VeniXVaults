@@ -1,0 +1,87 @@
+﻿# ------------------------------------------------------------
+# VeniXVaults Configuration
+# Advanced personal vault system for Paper 1.21+
+# Project Owner: VeniX
+# ------------------------------------------------------------
+
+config-version: 2
+
+settings:
+  # Language file used by the plugin.
+  # Available files: lang/tr.yml, lang/en.yml
+  language: "tr"
+
+  # Default vault count for players without extra permissions.
+  # Recommended setup: normal players get 1 vault, VIP ranks get 2-6 vaults.
+  # Permission examples: venixvaults.vaults.2, venixvaults.vaults.3, venixvaults.vaults.6
+  default-vaults: 1
+
+  # Hard upper limit for vault count.
+  # Keep this at 54 or lower because Minecraft inventory GUIs are slot based.
+  max-vaults: 54
+
+  # Real vault inventory size.
+  # This controls the actual player storage, not the selector menu.
+  # Valid range: 1-6
+  # Permission examples: venixvaults.size.3, venixvaults.size.6
+  default-rows: 6
+
+  # Save vault data when a vault inventory is closed.
+  save-on-close: true
+
+  # Background autosave interval in minutes.
+  # VeniXVaults also saves after inventory changes to reduce data-loss risk.
+  # Set to 0 to disable scheduled autosave.
+  auto-save-minutes: 1
+
+  # Log admin vault inspections to console.
+  audit-admin-open: true
+
+  # Worlds where players cannot open vaults unless they have venixvaults.bypass.world.
+  disabled-worlds:
+    - "example_disabled_world"
+
+gui:
+  # Selector menu title.
+  selector-title: "&#18F29A&lV&#22EFA0&lD&#2CECA6&le&#36E9AC&lp&#40E6B2&lo&#4AE3B8&lX &8- &#7CFFCBDepolar"
+
+  # Real vault inventory title.
+  vault-title: "&#18F29A&lVeniXVaults &8- &#7CFFCBDepo #{vault}"
+
+  # Selector menu size only. This does not change the real vault size.
+  # Valid values: 9, 18, 27, 36, 45, 54
+  selector-size: 27
+
+  # How many vault icons should be displayed in the selector.
+  # Default shows 3 usable vaults + 1 unavailable slot.
+  # Server owners can increase this later.
+  visible-vaults: 4
+
+  # Selector item materials.
+  open-material: "BARREL"
+  locked-material: "LIME_STAINED_GLASS_PANE"
+  info-material: "BOOK"
+  close-material: "BARRIER"
+
+  # Optional background filler. Disabled by default for a cleaner premium menu.
+  filler-material: "GREEN_STAINED_GLASS_PANE"
+  show-filler: false
+
+items:
+  # Prevent specific items from being stored.
+  blacklist-enabled: true
+  blacklist:
+    - "BEDROCK"
+    - "BARRIER"
+    - "COMMAND_BLOCK"
+    - "CHAIN_COMMAND_BLOCK"
+    - "REPEATING_COMMAND_BLOCK"
+    - "STRUCTURE_BLOCK"
+    - "STRUCTURE_VOID"
+
+sounds:
+  enabled: true
+  open: "BLOCK_ENDER_CHEST_OPEN"
+  close: "BLOCK_ENDER_CHEST_CLOSE"
+  deny: "ENTITY_VILLAGER_NO"
+  click: "UI_BUTTON_CLICK"

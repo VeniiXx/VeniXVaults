@@ -1,0 +1,79 @@
+﻿name: VeniXVaults
+version: 1.0.0
+main: me.venixvaults.core.VeniXVaultsPlugin
+api-version: '1.21'
+author: VeniXVaults Team
+description: Gelismis, hizli ve guvenli oyuncu depo sistemi.
+website: https://modrinth.com/plugin/venixvaults
+
+commands:
+  venixvaults:
+    description: VeniXVaults ana komutu.
+    usage: /venixvaults
+    aliases: [vv, vvaults, vvault]
+  depo:
+    description: Depo menunu acar.
+    usage: /depo [numara]
+    aliases: [depolar, vault, vaults, storage]
+
+permissions:
+  venixvaults.use:
+    description: Depo kullanma izni.
+    default: true
+  venixvaults.admin:
+    description: Tum VeniXVaults yonetim komutlari.
+    default: op
+  venixvaults.vaults.2:
+    description: Oyuncuya 2 depo hakki verir.
+    default: false
+  venixvaults.vaults.3:
+    description: Oyuncuya 3 depo hakki verir.
+    default: false
+  venixvaults.vaults.4:
+    description: Oyuncuya 4 depo hakki verir.
+    default: false
+  venixvaults.vaults.5:
+    description: Oyuncuya 5 depo hakki verir.
+    default: false
+  venixvaults.vaults.6:
+    description: Oyuncuya 6 depo hakki verir.
+    default: false
+  venixvaults.depos.2:
+    description: Oyuncuya 2 depo hakki verir. Turkce alias.
+    default: false
+  venixvaults.depos.3:
+    description: Oyuncuya 3 depo hakki verir. Turkce alias.
+    default: false
+  venixvaults.depos.4:
+    description: Oyuncuya 4 depo hakki verir. Turkce alias.
+    default: false
+  venixvaults.depos.5:
+    description: Oyuncuya 5 depo hakki verir. Turkce alias.
+    default: false
+  venixvaults.depos.6:
+    description: Oyuncuya 6 depo hakki verir. Turkce alias.
+    default: false
+  venixvaults.depo.2:
+    description: Oyuncuya 2 depo hakki verir. Turkce tekil alias.
+    default: false
+  venixvaults.depo.3:
+    description: Oyuncuya 3 depo hakki verir. Turkce tekil alias.
+    default: false
+  venixvaults.depo.4:
+    description: Oyuncuya 4 depo hakki verir. Turkce tekil alias.
+    default: false
+  venixvaults.depo.5:
+    description: Oyuncuya 5 depo hakki verir. Turkce tekil alias.
+    default: false
+  venixvaults.depo.6:
+    description: Oyuncuya 6 depo hakki verir. Turkce tekil alias.
+    default: false
+  venixvaults.size.6:
+    description: Oyuncunun depo boyutunu 6 satir yapar.
+    default: false
+  venixvaults.bypass.world:
+    description: Kapali dunyalarda depo acma kisitlamasini atlar.
+    default: op
+  venixvaults.bypass.blacklist:
+    description: Blacklist esya kisitlamasini atlar.
+    default: op

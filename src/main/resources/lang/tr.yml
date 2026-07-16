@@ -1,0 +1,46 @@
+﻿prefix: "&#18F29A&lV&#22EFA0&lD&#2CECA6&le&#36E9AC&lp&#40E6B2&lo&#4AE3B8&lX &8» &7"
+
+messages:
+  no-permission: "{prefix}&cBu islem icin yetkin yok."
+  only-player: "{prefix}&cBu komut sadece oyun icinden kullanilabilir."
+  reloaded: "{prefix}&aAyarlar ve dil dosyasi yenilendi."
+  saved: "{prefix}&aTum aktif depo verileri guvenli sekilde kaydedildi."
+  backup-created: "{prefix}&aYedek olusturuldu: &f{file}"
+  backup-failed: "{prefix}&cYedek olusturulamadi. Detaylar icin konsolu kontrol et."
+  invalid-number: "{prefix}&cGecerli bir depo numarasi yazmalisin."
+  vault-locked: "{prefix}&cBu depo mevcut degil."
+  vault-opened: "{prefix}&aDepo &f#{vault} &aacildi."
+  world-disabled: "{prefix}&cBu dunyada depo kullanimi kapali."
+  player-not-found: "{prefix}&cOyuncu bulunamadi veya daha once sunucuya girmemis."
+  admin-opened: "{prefix}&a{player} oyuncusunun &f#{vault} &adeposu acildi."
+  item-blacklisted: "{prefix}&cBu esya depoya koyulamaz."
+  help:
+    - "&8&m----------------&r &#18F29A&lVeniXVaults &8&m----------------"
+    - "&#8CF5C1/depo &7- Depo secim menusunu acar."
+    - "&#8CF5C1/depo <numara> &7- Belirli depoyu acar."
+    - "&#8CF5C1/venixvaults reload &7- Config ve dili yeniler."
+    - "&#8CF5C1/venixvaults save &7- Depolari manuel kaydeder."
+    - "&#8CF5C1/venixvaults backup &7- Depo verilerini yedekler."
+    - "&#8CF5C1/venixvaults open <oyuncu> <numara> &7- Oyuncu deposunu admin olarak acar."
+    - "&8&m----------------------------------------"
+
+gui:
+  vault-name: "&#18F29A&lDepo &f#{vault}"
+  vault-lore:
+    - "&8Kisisel depolama alani"
+    - ""
+    - "&7Boyut: &#7CFFCB{rows} satir"
+    - "&7Durum: &#7CFFCBKullanilabilir"
+    - ""
+    - "&#18F29AAcmak icin tikla."
+  locked-name: "&#B8FFD9&lMevcut Degil #{vault}"
+  locked-lore:
+    - "&7Bu depo su anda listede yok."
+  info-name: "&#18F29A&lDepo Ozeti"
+  info-lore:
+    - "&8Oyuncu depo bilgisi"
+    - ""
+    - "&7Aktif depo: &#7CFFCB{unlocked}"
+    - "&7Depo boyutu: &#7CFFCB{rows} satir"
+    - "&7Kayit modu: &#7CFFCBAnlik + otomatik"
+  close-name: "&c&lMenuyu Kapat"

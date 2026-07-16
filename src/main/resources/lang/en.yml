@@ -1,0 +1,46 @@
+﻿prefix: "&#18F29A&lV&#22EFA0&lD&#2CECA6&le&#36E9AC&lp&#40E6B2&lo&#4AE3B8&lX &8» &7"
+
+messages:
+  no-permission: "{prefix}&cYou do not have permission to do that."
+  only-player: "{prefix}&cThis command can only be used in-game."
+  reloaded: "{prefix}&aConfiguration and language file reloaded."
+  saved: "{prefix}&aAll active vault data has been saved safely."
+  backup-created: "{prefix}&aBackup created: &f{file}"
+  backup-failed: "{prefix}&cBackup could not be created. Check the console for details."
+  invalid-number: "{prefix}&cPlease enter a valid vault number."
+  vault-locked: "{prefix}&cThis vault is not available."
+  vault-opened: "{prefix}&aVault &f#{vault} &aopened."
+  world-disabled: "{prefix}&cVaults are disabled in this world."
+  player-not-found: "{prefix}&cPlayer not found or has never joined before."
+  admin-opened: "{prefix}&aOpened &f{player}&a's vault &f#{vault}&a."
+  item-blacklisted: "{prefix}&cThis item cannot be stored in vaults."
+  help:
+    - "&8&m----------------&r &#18F29A&lVeniXVaults &8&m----------------"
+    - "&#8CF5C1/depo &7- Opens the vault selector."
+    - "&#8CF5C1/depo <number> &7- Opens a specific vault."
+    - "&#8CF5C1/venixvaults reload &7- Reloads config and language."
+    - "&#8CF5C1/venixvaults save &7- Saves vaults manually."
+    - "&#8CF5C1/venixvaults backup &7- Backs up vault data."
+    - "&#8CF5C1/venixvaults open <player> <number> &7- Opens a player vault as admin."
+    - "&8&m----------------------------------------"
+
+gui:
+  vault-name: "&#18F29A&lVault &f#{vault}"
+  vault-lore:
+    - "&8Personal storage space"
+    - ""
+    - "&7Size: &#7CFFCB{rows} rows"
+    - "&7Status: &#7CFFCBAvailable"
+    - ""
+    - "&#18F29AClick to open."
+  locked-name: "&#B8FFD9&lUnavailable #{vault}"
+  locked-lore:
+    - "&7This vault is not currently listed."
+  info-name: "&#18F29A&lVault Summary"
+  info-lore:
+    - "&8Player vault information"
+    - ""
+    - "&7Active vaults: &#7CFFCB{unlocked}"
+    - "&7Vault size: &#7CFFCB{rows} rows"
+    - "&7Save mode: &#7CFFCBInstant + automatic"
+  close-name: "&c&lClose Menu"
